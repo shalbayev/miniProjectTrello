@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head th:insert="~{head.html}"></head>
+<body>
+<div th:insert="~{navbar.html}"></div>
+<div class="container mt-3" style="min-height: 800px;">
+    <div class="row">
+        <div class="col" layout:fragment="main_content"></div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 p-4 bg-dark">
+            <h6 class="text-center text-light">
+                Copyright &copy; All Rights Reserved
+            </h6>
+        </div>
+    </div>
+</div>
+</body>
+</html>
